@@ -10,5 +10,13 @@ Opportunities and scholarship: It  provides the resources of different opportuni
 Core Subject: It provides the resources of core subjects like DBMS,Networking and operating systems and object oriented programming.
 Resume building tools : It  provides the resources of different resume building tools.<br>										
 Senior Experiences: Here users  share and view  the internship and placement experience of different companies. 
+ 
+  ![Screenshot 2022-06-03 000046](https://user-images.githubusercontent.com/81462774/171724504-27c56803-19f1-412a-812a-e7d60d652341.png)
+
+   ![Screenshot 2022-06-03 000117](https://user-images.githubusercontent.com/81462774/171724588-bb84a64f-3293-4f51-8658-08bb851a0271.png)
   
+  ![Screenshot 2022-06-03 000213](https://user-images.githubusercontent.com/81462774/171724682-a890c0c5-a11a-4dff-a080-0b0ae13473ef.png)
   
+![Screenshot 2022-06-03 000256](https://user-images.githubusercontent.com/81462774/171724745-45640243-492a-4b54-911c-064480f455b8.png)
+
+
