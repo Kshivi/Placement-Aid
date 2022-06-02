@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="/css/login.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Login</title>
+  <script type="text/javascript">
+    function preventBack() {
+        window.history.forward(); 
+    }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+</script>
+</head>
+
+<nav class="navbar navbar-light" style="background-color:burlywood">
+  <a class="navbar-brand" href="#">
+    <img src="/bg-images/logo.png" alt="Logo" style="width:50px;border-radius: 50%">
+  </a>
+<span class="navbar-brand mb-0 h1">Placement Helping Aid</span>
+<ul class="nav navbar-nav navbar-right h4">
+    <li><a href="/register">Register</a></li>
+    <li><a href="/admin">Admin</a></li>
+    <li><a href=""></a></li>
+    </li>
+
+</ul>
+</nav>
+
+<body>
+  <!-- As a link -->
+    <div class="main">
+    <p class="sign" align="center">LOGIN FORM</p>
+    <%
+  if(typeof message!=='undefined'){
+      %>
+      <p style="color:brown;"align="center"><%=message%></p> 
+      <%
+  }
+  %>
+    <form class="form1" action="/login" method="post" >
+      <input class="un" type="email" name="email" align="center" placeholder="enter email" required>
+      <input class="pass" type="password" name="password" align="center" placeholder="enter password" required>
+      <input type="submit" class="submit" align="center"value="Login">
+      <p class="forgot" align="center"><a href="/forget">Forgot Password?</p>
+      <p align="center"><a href="/verification">not verified? verify</p>              
+    </div>
+     
+</body>
+
+</html>
+
+
+
+
+

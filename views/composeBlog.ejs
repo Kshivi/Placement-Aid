@@ -1,0 +1,12 @@
+<%- include("./partials/header") %>
+<%- include("./partials/navbar") %>
+<div class="container mt-5">
+    <h3 class="my-3">Add your Experience here. 😍 </h3>
+    <form action="/compose" method="POST">
+        <input type="text" name="title" placeholder="Enter Title" class="form-control" required>
+        <textarea name="content" cols="20" rows="20" class="mt-3 form-control" placeholder="Enter Content Here..."
+            required></textarea>
+        <input type="submit" value="Compose" class="mt-5 btn btn-md btn-success">
+    </form>
+</div>
+<%- include("./partials/footer") %>

@@ -1,0 +1,131 @@
+<!--<% include("../layouts/heder.ejs") %>
+<h1>Dashboard</h1>
+<a href="/admin/home">Go to Home</a>
+<a href="/admin/new-user">Add user</a>
+<br><br>
+<table width="50%">
+    <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>Image</th>
+    <th>Verified</th>
+    <th>Action</th>
+    </tr>
+    <%
+    if(users.length>0){
+        for(let i=0;i<users.length;i++){
+         %>
+         <tr>
+            <td><%=users[i].name %></td>
+            <td><%=users[i].email %></td>
+            <td><%=users[i].mobile %></td>
+            <td><img src="/userImages/<%=users[i].image %>"width="100px" height="100px" alt="<%=users[i].image %>" ></td>
+            <td>
+                <%
+                if(users[i].is_varified==0){
+                    %>
+                    <p>Not Verified</p>
+                    <%
+                }else{
+                    %>
+                    <p>Verified</p>
+                    <%
+                }
+                %>
+            </td> 
+            <td><a href="/admin/edit-user?id=<%=users[i]._id %>">Edit</a>
+                <a href="/admin/delete-user?id=<%=users[i]._id %>">Delete</a>
+            </td>
+
+        </tr>
+         <%
+        }
+    }else{
+        %>
+        <tr>
+            <td colspan="5">Users Not Found</td>
+        </tr>
+        <%
+    }
+    %>
+</table>
+<br>
+<% include("../layouts/foot.ejs") %>-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2>Placement<b>Helping Aid</b></h2>
+                </div>
+                <div class="col-sm-7">
+                    <a href="/admin/new-user" class="btn btn-secondary"><i class="material-icons">&#xE147;</i> <span>Add New User</span></a>
+                    <a href="/admin/home" class="btn btn-secondary"><i class="material-icons">&#xE24D;</i> <span>Back to Home</span></a>						
+                </div>
+            </div>
+        </div>
+<br>
+<table class="table">
+<thead>
+<tr>
+<th scope="col">#</th>
+<th scope="col">Image</th>
+<th scope="col">Name</th>
+<th scope="col">Email</th>
+<th scope="col">Mobile</th>
+<th scope="col">Verified</th>
+<th width="200px">Action</th>
+</tr>
+</thead>
+<tbody>
+<% if(users.length){
+for(var i = 0; i<users.length; i++) {%>
+<tr>
+<th scope="row">
+<%= (i+1) %>
+</th>
+<td><img src="/userImages/<%=users[i].image %>"width="80px" height="80px"  alt="<%=users[i].image %>" ></td>
+<td>
+<%= users[i].name%>
+</td>
+<td>
+    <%= users[i].email%>
+</td>
+<td><%=users[i].mobile %></td>
+ <td>
+ <%
+    if(users[i].is_varified==0){
+            %>
+            <p>Not Verified</p>
+            <%
+    }else{
+            %>
+            <p>Verified</p>
+            <%
+        }
+        %>
+    </td>
+    <td> <a class="btn btn-success edit" href="/admin/edit-user?id=<%=users[i]._id %>">Edit</a>
+    <a class="btn btn-danger delete" href="/admin/delete-user?id=<%=users[i]._id %>">delete</a>
+    </td>
+    </tr>
+    <% }
+    }else{ %>
+    <tr>
+    <td colspan="3">No user</td>
+    </tr>
+    <% } %>
+    </tbody>
+    </table>
+    </body>
+    </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>    
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+ <body>
+            
+ <header>
+	  
+    <nav>
+		<div class="logo">
+			<p>Placement Helping Aid</p>
+		</div>
+		<ul>
+			<li><a href="" class="active">home</a></li>
+			<li><a href="/cardsandfiles/about us.html">about</a></li>
+			<li><a href="/cardsandfiles/contactus.html">contact</a></li>
+            <li><img src="userImages/<%=user.image%>" alt="<%=user.image%>" style="width:40px;border-radius: 50%">
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"></a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item"><h5>welcome!<small class="text-muted">Hi,<%=user.name %></small></h5>
+                    <a href="#" class="dropdown-item"><%=user.email%></a>
+                    <a href="#" class="dropdown-item"><%=user.mobile%></a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/logout"class="dropdown-item">Logout</a>
+                </div>
+            </li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<h3>Placement Helping Aid</h3>
+			<h1>Step By Step<span class="change_content"> </span> <span style="margin-top: -10px;"> | </span> </h1>
+			<p>"Day by Day"</p>
+			<a href="/cardsandfiles/features.html" class="btnone">Our Features</a>
+		</section>
+	</main>
+
+    
+</header>
+
+</body>
+</html>

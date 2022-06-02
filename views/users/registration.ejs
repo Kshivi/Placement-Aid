@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/register.css" />
+       <title>Register</title>
+       
+  </head>
+  
+      
+    <div class="main">
+      <h1>Registration Form</h1>
+      <%
+        if(typeof message!=='undefined'){
+      %>
+      <p style="color:brown;"><%=message%></p> 
+      <%
+  }
+ %>
+      <form action="" method="post" enctype="multipart/form-data"required>
+        <input type="name" name="name" placeholder="My Name" />
+        <input type="email"name="email" placeholder="enter email"/>
+        <input type="text"name="mob" placeholder="enter phone no"/>
+        <input type="file"name="image"/>
+        <input type="password" name="password" placeholder="enter password" />
+        <label>Admin</label><input type="radio" name="admin" value="1"><label>User</label> <input type="radio" name="admin" value="0">
+        <input type="submit" class="submit" name="submit" value="Register now">
+        <p align="center"><a href="/login">Have an Acoount? Login</p>
+        </form>
+    </div>
+  </body>
+</html>

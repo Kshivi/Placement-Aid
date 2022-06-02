@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	background-image:url('/bg-images/bg2.jpg');
+	background-position: center;
+	background-size: cover;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+}
+.navbar {
+	height: 12%;
+	display: flex;
+	align-items: center;
+}
+.menu-icon {
+	width: 30px;
+	cursor: pointer;
+	margin-left: 40px;
+}
+nav {
+	flex: 1;
+	text-align: right;
+}
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 30px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+}
+.row {
+	display: flex;
+	height: 75%;
+	align-items: center;
+}
+.col {
+	flex-basis: 60%;
+	margin-top :48px;;
+}
+h1 {
+	color: #fff;
+	font-size: 75px;
+}
+p {
+	color: #fff;
+	font-size: 15px;
+	line-height: 15px;
+}
+button {
+	width: 180px;
+	color: #000;
+	font-size: 12px;
+	padding: 12px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 30px;
+}
+.card {
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 17px 22px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin-left:25px;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+	
+}
+.card1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/bg-images/a.gif");
+}
+.card2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/bg-images/b.gif");
+}
+
+.card3 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/bg-images/c.gif");
+}
+
+.card4 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/bg-images/d.gif");
+}
+.card5 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/bg-images/b.gif");
+}
+.card6 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/bg-images/d.gif");
+	
+	  
+}
+.card:hover {
+	transform: translateY(-10px);
+}
+
+
+h5 {
+	color: rgb(0, 0, 0);
+	text-shadow: 0 0 5px rgb(228, 228, 228);
+	font-size: 18px;
+	font-weight: 600;
+}
+.card p {
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+}

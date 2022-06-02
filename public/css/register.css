@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background:cornsilk;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+.main {
+  width: 500px;
+  max-width: 70%;
+  text-align: left;
+  background-color:burlywood;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+.main > h1 {
+  font-size: 30px;
+  color: brown;
+  margin: 0 0 30px 0;
+  text-align:center;
+}
+
+.main > form > input {
+  width: 95%;
+  padding: 15px;
+  background-color:white;
+  color: rgb(66, 63, 63);
+  border: 0;
+  margin: 10px 5px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main > form > button {
+  background-color:rgb(193, 94, 94);
+  padding: 10px;
+  width: 95%;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  border-radius: 1.5em;;
+  cursor: pointer;
+}
+
+input[type="submit"]{
+  width:100px;
+  height:40px;
+  background-color:rgb(84, 57, 142);
+  border:rgb(93, 42, 165);
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+.main > form > input:focus,
+.main > form > button:focus {
+  outline: none;
+}
+.submit {
+  cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #d69898, #e2585c);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(179, 20, 20, 0.04);
+}
+
+a {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #df8787;
+  text-decoration: none
+}
+.navbar-brand
+{
+ font-size: 25px;
+
+}
+
